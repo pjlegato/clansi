@@ -33,7 +33,7 @@
    })
 
 
-(def ^:dynamic *use-ansi* "Rebind this to false if you don't want to see ANSI codes in some part of your code." true)
+(def ^:dynamic *use-ansi*  true) ;; Moved docstring out of def for pre Clojure 1.3 compatibility "Rebind this to false if you don't want to see ANSI codes in some part of your code."
 
 (defn ansi
   "Output an ANSI escape code using a style key.
